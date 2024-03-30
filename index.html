@@ -140,11 +140,78 @@
       line-height: 60px;
       font-size: 25px;
       color: red;
+      font-style: italic;
     }
 
     .wenZhiYiChu {
       overflow: hidden;
       text-overflow: ellipsis;
+    }
+
+    .scroll {
+      /* width: 500px;
+      height: 50px; */
+      /* line-height: 50px;
+      white-space: nowrap;
+      overflow: hidden; */
+      /* font-size: 30px; */
+      /* margin: 0 auto; */
+      color: red;
+    }
+
+    .scroll span {
+      display: inline-block;
+      /*inline样式不能使用动画*/
+      animation: scroll 8s linear infinite;
+    }
+
+    @keyframes scroll {
+      from {
+        transform: translateX(500px)
+      }
+
+      to {
+        transform: translateX(-100%)
+      }
+    }
+
+    .blink {
+      /* width: 100px;
+      height: 100px;
+      line-height: 100px;
+      font-size: 15px; */
+      background-color: #ff0;
+      text-align: center;
+      animation: aBlink 1000ms infinite;
+      -webkit-animation: aBlink 1000ms infinite;
+    }
+
+    @keyframes aBlink {
+      from {
+        background-color: #ff0;
+      }
+
+      50% {
+        background-color: #f00;
+      }
+
+      to {
+        background-color: #ff0;
+      }
+    }
+
+    @-webkit-keyframes aBlink {
+      from {
+        background-color: #ff0;
+      }
+
+      50% {
+        background-color: #f00;
+      }
+
+      to {
+        background-color: #ff0;
+      }
     }
   </style>
 </head>
@@ -158,12 +225,12 @@
           align-items: center;
           justify-content: center;
           border-bottom: 1px solid #999;
-        " class="flex">
+        " class="flex ">
       <img alt="logo" src="https://p0.ssl.qhimgs1.com/sdr/400__/t015050908d1d36328a.png" width="40px" height="40px" />
       <div style="margin-left: 15px;color: red;font-family: kaiti;">周亚</div>
     </div>
     <!-- 导航栏 -->
-    <div class="flex1">
+    <div class="flex1 blink">
       <div class="daoHang">导航预留</div>
       <div class="daoHang">导航预留</div>
       <div class="daoHang">导航预留</div>
@@ -174,8 +241,8 @@
   <!-- 主区域 -->
   <div class="flex flex1 column">
     <!-- 头部栏 -->
-    <div class="baiSe yinYing suoJin touBuLan">
-      秉承工匠精神，21年专注自动化，参与中国境内大中型自动化仓储项目100余项。
+    <div class="baiSe yinYing suoJin touBuLan scroll ">
+      <span> 秉承工匠精神，21年专注自动化，参与中国境内大中型自动化仓储项目100余项。</span>
       <!-- <h1 style="font-size: 16px;color: rgb(255, 0, 217);"> 秉承工匠精神，21年专注自动化</h1> -->
     </div>
     <!-- 内容区 -->
@@ -229,7 +296,7 @@
         </div>
       </div>
       <!-- 右区 -->
-      <div style="flex: 1" class="youQu flex column mgr8 mgt8">
+      <div style="flex: 1" class="youQu flex column mgr8 mgt8 ">
         <!-- 提示区 -->
         <div style="height: 150px" class="baiSe yinYing"></div>
         <!-- 消息区 -->
