@@ -68,12 +68,15 @@
 
     /* 四个小盒子 */
     .shuJu {
-      height: 100px;
+      height: 150px;
     }
 
     /* 中间的大盒子 */
     .lieBiaoXiang {
       height: 160px;
+      line-height: 30px;
+      font-size: 25px;
+      padding-top: 10px;
     }
 
     /* 导航条 */
@@ -126,6 +129,18 @@
       font-family: kaiti;
       font-weight: bold;
     }
+
+    .suoJin {
+      text-indent: 2em;
+    }
+
+    .touBuLan {
+      height: 60px;
+      z-index: 2;
+      line-height: 60px;
+      font-size: 25px;
+      color: red;
+    }
   </style>
 </head>
 
@@ -154,8 +169,9 @@
   <!-- 主区域 -->
   <div class="flex flex1 column">
     <!-- 头部栏 -->
-    <div style="height: 60px; z-index: 2" class="baiSe yinYing">
-      <h1 style="font-size: 18px;color: rgb(255, 0, 217);padding: 15px;"> 秉承工匠精神，21年专注自动化</h1>
+    <div class="baiSe yinYing suoJin touBuLan">
+      秉承工匠精神，21年专注自动化，参与中国境内大中型自动化仓储项目100余项。
+      <!-- <h1 style="font-size: 16px;color: rgb(255, 0, 217);"> 秉承工匠精神，21年专注自动化</h1> -->
     </div>
     <!-- 内容区 -->
     <div class="flex flex1 neiRong" style="overflow: auto">
@@ -182,19 +198,18 @@
         <!-- 列表区，列表数据可以无限增加 -->
         <div class="flex column">
           <!-- 列表项 -->
-          <div class="lieBiaoXiang mgt8 baiSe yinYing ziti">
-            </br>周亚，重庆人，毕业于西南大学机电一体化专业，自动化技术员职称，2017年2月进入重庆医药和平物流工作，主要从事自动化设备运维、设备层通讯，数据维护，控制优化。</br></br>
-            三菱、欧姆龙、西门子PLC编程与调试，unix工控机优化、汇川伺服，自动化组态，视觉系统优化、总线通讯、各种变频器运用。</br></br>
+          <div class="lieBiaoXiang mgt8 baiSe yinYing ziti suoJin">
+            周亚，重庆人，毕业于西南大学机电一体化专业，自动化技术员职称，2017年2月进入重庆医药和平物流工作，主要从事自动化设备运维、设备层通讯，数据维护，控制优化。
+            三菱、欧姆龙、西门子PLC编程与调试，unix工控机优化、汇川伺服，自动化组态，视觉系统优化、总线通讯、各种变频器运用。
 
           </div>
-          <div class="lieBiaoXiang mgt8 baiSe yinYing ziti">
-            <br>
+          <div class="lieBiaoXiang mgt8 baiSe yinYing ziti suoJin">
             2003年至2017年，上海展升自动化工作，从电气负责人做起，历经设备制造、项目施工、程序编写、调试、项目SV、运维，积累了丰富的行业全系列工作经验。
-            与日本(大福)、韩国(大福)、德国(德马泰克)、澳大利亚(德马泰克)、奥地利(德马泰克)等国工程师在中国大陆地区一同参与近百项中大型工程项目，在工作中获得一直高度肯定。</br>
-            </br>从制造到安装，从项目负责到编程调试，历经设备制造到客户使用，及售后的全套流程。
+            与日本(大福)、韩国(大福)、德国(德马泰克)、澳大利亚(德马泰克)、奥地利(德马泰克)等国工程师在中国大陆地区一同参与近百项中大型工程项目，在工作中获得一直高度肯定。
+            从制造到安装，从项目负责到编程调试，历经设备制造到客户使用，及售后的全套流程。
           </div>
           <div class="lieBiaoXiang mgt8 baiSe yinYing">
-            <dt style="color: brown;">友情链接</dt></br>
+            <dt style="color: brown;">友情链接</dt>
             <dd><a target="_blank" rel="nofollow" href="https://www.daifuku.com/cn/"> 大福(中国)物流设备有限公司 </a></dd>
             <dd><a target="_blank" rel="nofollow" href="https://www.dematic.cn/"> 德马泰克Dematic </a></dd>
             <dd><a target="_blank" rel="nofollow" href="https://www.hamco.net.cn"> 苏州鸿安机械股份有限公司 </a></dd>
