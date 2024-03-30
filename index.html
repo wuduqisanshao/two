@@ -5,10 +5,6 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="viewport"
-    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
-
-
   <title>wuduqisanshao</title>
   <!-- <meta name="description" content="周亚Flex布局" />
   <link rel="icon" href="/favicon.ico" />
@@ -18,91 +14,45 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" /> -->
-
-<script>
-    (function(doc, win) {
+  <script>
+    (function (doc, win) {
       var docEl = doc.documentElement,
-      resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-      recalc = function() {
-        var clientWidth = docEl.clientWidth;
-        if(!clientWidth) return;
-        if(clientWidth >= 750) {
-          docEl.style.fontSize = '100px';
-        } else {
-          docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
-        }
-      };
-      if(!doc.addEventListener) return;
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+          if (clientWidth >= 750) {
+            docEl.style.fontSize = '100px';
+          } else {
+            docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+          }
+        };
+      if (!doc.addEventListener) return;
       win.addEventListener(resizeEvt, recalc, false);
       doc.addEventListener('DOMContentLoaded', recalc, false);
     })(document, window);
-</script>
-
-
-  
-  <script>
-    'use strict';
-
-    /**
-    
-    * @param {Boolean} [normal = false] - 默认开启页面压缩以使页面高清;
-    
-    * @param {Number} [baseFontSize = 100] - 基础fontSize, 默认100px;
-    
-    * @param {Number} [fontscale = 1] - 有的业务希望能放大一定比例的字体;
-    
-    */
-
-    const win = window;
-
-    export default win.flex = (normal, baseFontSize, fontscale) => {
-
-      const _baseFontSize = baseFontSize || 100;
-
-      const _fontscale = fontscale || 1;
-
-      const doc = win.document;
-
-      const ua = navigator.userAgent;
-
-      const matches = ua.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i);
-
-      const UCversion = ua.match(/U3\/((\d+|\.){5,})/i);
-
-      const isUCHd = UCversion && parseInt(UCversion[1].split('.').join(''), 10) >= 80;
-
-      const isIos = navigator.appVersion.match(/(iphone|ipad|ipod)/gi);
-
-      let dpr = win.devicePixelRatio || 1;
-
-      if (!isIos && !(matches && matches[1] > 534) && !isUCHd) {
-
-        // 如果非iOS, 非Android4.3以上, 非UC内核, 就不执行高清, dpr设为1;
-
-        dpr = 1;
-
-      }
-
-      const scale = normal ? 1 : 1 / dpr;
-
-      let metaEl = doc.querySelector('meta[name="viewport"]');
-
-      if (!metaEl) {
-
-        metaEl = doc.createElement('meta');
-
-        metaEl.setAttribute('name', 'viewport');
-
-        doc.head.appendChild(metaEl);
-
-      }
-
-      metaEl.setAttribute('content', `width=device-width,user-scalable=no,initial-scale=${scale},maximum-scale=${scale},minimum-scale=${scale}`);
-
-      doc.documentElement.style.fontSize = normal ? '50px' : `${_baseFontSize / 2 * dpr * _fontscale}px`;
-
-    };
   </script>
+
+
+  <script type="text/javascript">
+    //保密
+    //禁止F12查看源码
+    document.onkeydown = function () {
+      if (window.event && window.event.keyCode == 123) {
+        alert("F12被禁用");
+        event.keyCode = 0;
+        event.returnValue = false;
+      }
+      if (window.event && window.event.keyCode == 13) {
+        window.event.keyCode = 505;
+      }
+      if (window.event && window.event.keyCode == 8) {
+        alert(str + "\n请使用Del键进行字符的删除操作！");
+        window.event.returnValue = false;
+      }
+    }
+  </script>
+
 
   <style>
     body {
@@ -263,45 +213,6 @@
         transform: translateX(-100%)
       }
     }
-
-    .blink {
-      /* width: 100px;
-      height: 100px;
-      line-height: 100px;
-      font-size: 15px; */
-      background-color: #ff0;
-      text-align: center;
-      animation: aBlink 1000ms infinite;
-      -webkit-animation: aBlink 1000ms infinite;
-    }
-
-    @keyframes aBlink {
-      from {
-        background-color: #ff0;
-      }
-
-      50% {
-        background-color: #f00;
-      }
-
-      to {
-        background-color: #ff0;
-      }
-    }
-
-    @-webkit-keyframes aBlink {
-      from {
-        background-color: #ff0;
-      }
-
-      50% {
-        background-color: #f00;
-      }
-
-      to {
-        background-color: #ff0;
-      }
-    }
   </style>
 </head>
 
@@ -314,7 +225,7 @@
           align-items: center;
           justify-content: center;
           border-bottom: 1px solid #999;
-        " class="flex ">
+        " class="flex">
       <img alt="logo" src="https://p0.ssl.qhimgs1.com/sdr/400__/t015050908d1d36328a.png" width="40px" height="40px" />
       <div style="margin-left: 15px;color: red;font-family: kaiti;">周亚</div>
     </div>
