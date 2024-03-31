@@ -14,45 +14,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" /> -->
-  <script>
-    (function (doc, win) {
-      var docEl = doc.documentElement,
-        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-        recalc = function () {
-          var clientWidth = docEl.clientWidth;
-          if (!clientWidth) return;
-          if (clientWidth >= 750) {
-            docEl.style.fontSize = '100px';
-          } else {
-            docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
-          }
-        };
-      if (!doc.addEventListener) return;
-      win.addEventListener(resizeEvt, recalc, false);
-      doc.addEventListener('DOMContentLoaded', recalc, false);
-    })(document, window);
-  </script>
-
-
-  <script type="text/javascript">
-    //保密
-    //禁止F12查看源码
-    document.onkeydown = function () {
-      if (window.event && window.event.keyCode == 123) {
-        alert("F12被禁用");
-        event.keyCode = 0;
-        event.returnValue = false;
-      }
-      if (window.event && window.event.keyCode == 13) {
-        window.event.keyCode = 505;
-      }
-      if (window.event && window.event.keyCode == 8) {
-        alert(str + "\n请使用Del键进行字符的删除操作！");
-        window.event.returnValue = false;
-      }
-    }
-  </script>
-
 
   <style>
     body {
@@ -92,30 +53,30 @@
 
     /* 上下左右外边距 */
     .mg8 {
-      margin: 8px;
+      margin: 10px;
     }
 
     /* 右外边距 */
     .mgr8 {
-      margin-right: 8px;
+      margin-right: 10px;
     }
 
     /* 上外边距 */
     .mgt8 {
-      margin-top: 8px;
+      margin-top: 10px;
     }
 
     /* 四个小盒子 */
-    .shuJu {
+    s .shuJu {
       height: 150px;
     }
 
     /* 中间的大盒子 */
     .lieBiaoXiang {
-      height: 1.6rem;
-      line-height: 0.3rem;
-      font-size: 0.25rem;
-      padding-top: 0.1rem;
+      height: 160px;
+      line-height: 30px;
+      font-size: 25px;
+      padding-top: 10px;
     }
 
     /* 导航条 */
@@ -126,7 +87,7 @@
       color: #666;
     }
 
-    .neiRong:-webkit-scrollbar {
+    .neiRong::-webkit-scrollbar {
       display: none;
       /* Chrome Safari */
     }
@@ -157,11 +118,7 @@
       .shuJu {
         margin: 0 0 8px;
         flex: auto;
-      }
-
-      .shouJi {
         height: auto;
-
       }
     }
 
@@ -192,7 +149,6 @@
       text-overflow: ellipsis;
     }
 
-    /* 字体滚动 --------------------------------*/
     .scroll {
       /* width: 500px;
       height: 50px; */
@@ -207,7 +163,7 @@
     .scroll span {
       display: inline-block;
       /*inline样式不能使用动画*/
-      animation: scroll 8s linear infinite;
+      animation: scroll 5s linear infinite;
     }
 
     @keyframes scroll {
@@ -219,8 +175,6 @@
         transform: translateX(-100%)
       }
     }
-
-    /* 字体滚动 --------------------------------*/
   </style>
 </head>
 
@@ -238,15 +192,18 @@
       <div style="margin-left: 15px;color: red;font-family: kaiti;">周亚</div>
     </div>
     <!-- 导航栏 -->
-    <div class="flex1 ">
-      <div class="daoHang">预留</div>
-
+    <div class="flex1">
+      <div class="daoHang">导航预留</div>
+      <div class="daoHang">导航预留</div>
+      <div class="daoHang">导航预留</div>
+      <div class="daoHang">导航预留</div>
+      <div class="daoHang">导航预留</div>
     </div>
   </div>
   <!-- 主区域 -->
   <div class="flex flex1 column">
     <!-- 头部栏 -->
-    <div class="baiSe yinYing suoJin touBuLan scroll ">
+    <div class="baiSe yinYing suoJin touBuLan scroll">
       <span> 秉承工匠精神，21年专注自动化，参与中国境内大中型自动化仓储项目100余项。</span>
       <!-- <h1 style="font-size: 16px;color: rgb(255, 0, 217);"> 秉承工匠精神，21年专注自动化</h1> -->
     </div>
@@ -255,44 +212,44 @@
       <!-- 左区 -->
       <div style="flex: 3" class="flex column mg8">
         <!-- 数据区 -->
-        <div class="flex shuJuQu ">
+        <div class="ceBian flex shuJuQu ">
           <!-- 四个小块显示重点数据 -->
-          <div class="shuJu baiSe yinYing flex1 mgr8 ceBian">
+          <div class=" baiSe yinYing flex1 mgr8 ">
             <img class="img" src="http://i1.go2yd.com/image.php?url=0J1dOuaono" alt="图片一">
           </div>
-          <div class="shuJu baiSe yinYing flex1 mgr8 ">
+          <div class=" baiSe yinYing flex1 mgr8 ">
             <img class="img"
               src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=282672319,3757699926&fm=173&s=250046B11CF28ECA4C04603C0300D062&w=560&h=388&img.JPEG"
               alt="图片二">
           </div>
-          <div class="shuJu baiSe yinYing flex1 mgr8 ">
+          <div class=" baiSe yinYing flex1 mgr8 ">
             <img class="img" src="http://pic.rmb.bdstatic.com/c776a461eb0e88413bc9245e6a5384d33403.gif" alt="图片三">
           </div>
-          <div class="shuJu baiSe yinYing flex1 ">
+          <div class=" baiSe yinYing flex1 ">
             <img class="img" src="http://i1.go2yd.com/image.php?url=0I0aSsXktk" alt="图片四">
           </div>
         </div>
         <!-- 列表区，列表数据可以无限增加 -->
         <div class="flex column">
           <!-- 列表项 -->
-          <div class="lieBiaoXiang mgt8 baiSe yinYing ziti suoJin wenZhiYiChu shouJi">
+          <div class="shuJu lieBiaoXiang mgt8 baiSe yinYing ziti suoJin wenZhiYiChu">
             周亚，重庆人，毕业于西南大学机电一体化专业，自动化技术员职称，2017年2月进入重庆医药和平物流工作，主要从事自动化设备运维、设备层通讯，数据维护，控制优化。
             <br> 三菱、欧姆龙、西门子PLC编程与调试，unix工控机优化、汇川伺服，自动化组态，视觉系统优化、总线通讯、各种变频器运用。
 
           </div>
-          <div class="lieBiaoXiang mgt8 baiSe yinYing ziti suoJin wenZhiYiChu shouJi">
+          <div class="shuJu lieBiaoXiang mgt8 baiSe yinYing ziti suoJin wenZhiYiChu">
             2003年至2017年，上海展升自动化工作，从电气负责人做起，历经设备制造、项目施工、程序编写、调试、项目SV、运维，积累了丰富的行业全系列工作经验。
             与日本(大福)、韩国(大福)、德国(德马泰克)、澳大利亚(德马泰克)、奥地利(德马泰克)等国工程师在中国大陆地区一同参与近百项中大型工程项目，在工作中获得一直高度肯定。
             从制造到安装，从项目负责到编程调试，历经设备制造到客户使用，及售后的全套流程。
           </div>
-          <div class="lieBiaoXiang mgt8 baiSe yinYing shouJi">
+          <div class="shuJu lieBiaoXiang mgt8 baiSe yinYing">
             <dt style="color: brown;">友情链接</dt>
             <dd><a target="_blank" rel="nofollow" href="https://www.daifuku.com/cn/"> 大福(中国)物流设备有限公司 </a></dd>
             <dd><a target="_blank" rel="nofollow" href="https://www.dematic.cn/"> 德马泰克Dematic </a></dd>
             <dd><a target="_blank" rel="nofollow" href="https://www.hamco.net.cn"> 苏州鸿安机械股份有限公司 </a></dd>
             <dd><a target="_blank" rel="nofollow" href="https://www.cqphar.com"> 重庆医药（集团）股份有限公司 </a></dd>
           </div>
-          <div class="lieBiaoXiang mgt8 baiSe yinYing shouJi">
+          <div class="shuJu lieBiaoXiang mgt8 baiSe yinYing">
             <p style="text-align: center;padding: 10px; ">我的版权声明</p>
             <p style="text-align: center;padding: 10px; "><a rel="nofollow"
                 href="https://wuduqisanshao.github.io/two/">我的主页</a>
@@ -301,11 +258,11 @@
         </div>
       </div>
       <!-- 右区 -->
-      <div style="flex: 1" class="youQu flex column mgr8 mgt8 shouJi">
+      <div style="flex: 1" class="youQu flex column mgr8 mgt8">
         <!-- 提示区 -->
         <div style="height: 150px" class="baiSe yinYing"></div>
         <!-- 消息区 -->
-        <div style="height: 300px" class="mgt8 baiSe yinYing shouJi"></div>
+        <div style="height: 300px" class="mgt8 baiSe yinYing"></div>
       </div>
     </div>
   </div>
