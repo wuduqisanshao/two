@@ -6,116 +6,72 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>wuduqisanshao</title>
-  <!-- <meta name="description" content="周亚Flex布局" />
-  <link rel="icon" href="/favicon.ico" />
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" /> -->
 
   <style>
     body {
       margin: 0;
-      /* vh 是view height 既视窗高度的意思，100就是100%占满窗口高度 */
       height: 100vh;
       background-color: #eee;
     }
 
-    /* * {
-        border: 1px solid #333;
-      } */
     .flex {
       display: flex;
     }
-
-    /* 占满比例 */
     .flex1 {
       flex: 1;
     }
-
-    /* 竖向 */
     .column {
       flex-direction: column;
     }
-
-    /* 阴影 */
     .yinYing1 {
       box-shadow: rgb(0 0 0 / 20%) 0px 4px 1px -1px,
         rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
     }
-
-    /* 白色背景 */
     .baiSe {
       background-color: #fff;
     }
-
-    /* 上下左右外边距 */
     .mg8 {
       margin: 10px;
     }
-
-    /* 右外边距 */
     .mgr8 {
       margin-right: 10px;
     }
-
-    /* 上外边距 */
     .mgt8 {
       margin-top: 10px;
     }
-
-    /* 四个小盒子 */
     .shuJu {
       height: 150px;
       padding: 10px;
     }
-
-    /* 中间的大盒子 */
     .lieBiaoXiang {
       height: 160px;
       line-height: 30px;
       font-size: 25px;
       padding-top: 10px;
     }
-
-    /* 导航条 */
     .daoHang {
       padding: 10px 20px;
       border-bottom: 1px solid rgb(201, 201, 201);
       font-size: 14px;
       color: #666;
     } 
-
     .neiRong::-webkit-scrollbar {
       display: none;
       /* Chrome Safari */
     }
-
-    /* 当屏幕宽度小于600px时要改变的css */
     @media (max-width: 600px) {
-
-      /* 小屏幕上取消侧边栏，后面学js时会教怎么弹出 */
       .ceBian {
         display: none;
       }
-
-      /* 内容栏和数据栏flex方向改为竖向 */
       .neiRong {
         flex-direction: column;
       }
-
       .shuJuQu {
         flex-direction: column;
       }
-
-      /* 右区加左外边距 */
       .youQu {
         margin-left: 8px;
       }
-
-      /* 数据块外边距，大小改为自动宽高 */
       .shuJu {
         margin: 0 0 8px;
         flex: auto;
@@ -124,7 +80,6 @@
         scroll-padding: 8px;
         padding: 10px;
       }
-
       .touBuShuJu {
         margin: 0 0 8px;
         /* flex: auto; */
@@ -134,37 +89,29 @@
         font-size: 10px;
         border: none;
         background-color: #eee;
-        /* white-space: nowrap; */
       }
-
       .yinYing {
         box-shadow: none;
       }
     }
-
     .img {
       height: 150px;
     }
-
     @keyframes rotation {
       0% {
         -webkit-transform: rotate(0deg);
       }
-
       100% {
         -webkit-transform: rotate(360deg);
       }
     }
-
     .ziti {
       font-family: kaiti;
       font-weight: bold;
     }
-
     .suoJin {
       text-indent: 2em;
     }
-
     .touBuLan {
       height: 60px;
       z-index: 2;
@@ -173,12 +120,10 @@
       color: red;
       font-style: italic;
     }
-
     .wenZhiYiChu {
       overflow: hidden;
       text-overflow: ellipsis;
     }
-
     .scroll {
       /* width: 500px;
       height: 50px; */
@@ -189,28 +134,20 @@
       /* margin: 0 auto; */
       color: red;
     }
-
     .scroll span {
       display: inline-block;
-      /*inline样式不能使用动画*/
       animation: scroll 10s linear infinite;
     }
-
     @keyframes scroll {
       from {
         transform: translateX(500px)
       }
-
       to {
         transform: translateX(-100%)
       }
     }
-
     .yinYing {
       background: #fdd4b5;
-      /* width: 100%; */
-      /* font-size: 18px; */
-      /* color: #5f84a8; */
       border: 1px #e7daca solid;
       border-radius: 5px;
       margin: 0px 0px 7px 0px;
@@ -222,15 +159,12 @@
       background: -moz-linear-gradient(right, #e7daca, #ffc987);
       /* Firefox 3.6 - 15 */
       background: linear-gradient(to right, #e7daca, #ffc987);
-      /* 标准的语法（必须放在最后） */
     }
   </style>
 </head>
 
 <body class="flex">
-  <!-- 侧边栏 -->
   <div style="width: 200px; z-index: 3" class="ceBian flex column baiSe yinYing">
-    <!-- 侧边头像栏 -->
     <div style="
           padding: 10px;
           align-items: center;
@@ -240,7 +174,7 @@
       <img alt="logo" src="https://p0.ssl.qhimgs1.com/sdr/400__/t015050908d1d36328a.png" width="40px" height="40px" />
       <div style="margin-left: 15px;color: red;font-family: kaiti;">周亚</div>
     </div>
-    <!-- 导航栏 -->
+  
     <div class="flex1">
       <div class="daoHang">导航预留</div>
       <div class="daoHang">导航预留</div>
@@ -249,22 +183,16 @@
       <div class="daoHang">导航预留</div>
     </div>
   </div>
-  <!-- 主区域 -->
+ 
   <div class="flex flex1 column">
-    <!-- 头部栏 -->
     <div class="baiSe yinYing suoJin touBuLan touBuShuJu scroll">
       <span>
-        <nobr>传承工匠精神，21年专注自动化，中国近百余项大中型自动化仓储项目参与者。</nobr>
+        <nobr>传承工匠精神，21年专注自动化，中国近百余项中大型自动化仓储项目参与者。</nobr>
       </span>
-      <!-- <h1 style="font-size: 16px;color: rgb(255, 0, 217);"> 秉承工匠精神，21年专注自动化</h1> -->
-    </div>
-    <!-- 内容区 -->
+    </div>   
     <div class="flex flex1 neiRong" style="overflow: auto">
-      <!-- 左区 -->
       <div style="flex: 3" class="flex column mg8">
-        <!-- 数据区 -->
         <div class="ceBian flex shuJuQu ">
-          <!-- 四个小块显示重点数据 -->
           <div class=" baiSe yinYing flex1 mgr8 column" style="padding: 10px;">
             <nobr>
               <img class="img" src="http://i1.go2yd.com/image.php?url=0J1dOuaono" alt="图片一"><!--
@@ -276,21 +204,17 @@
                 --><img class="img" src="http://i1.go2yd.com/image.php?url=0I0aSsXktk" alt="图片四">
             </nobr>
           </div>
-        </div>
-        <!-- 列表区，列表数据可以无限增加 -->
-        <div class="flex column">
-          <!-- 列表项 -->
+        </div>       
+        <div class="flex column">         
           <div class="shuJu lieBiaoXiang mgt8 baiSe yinYing ziti suoJin wenZhiYiChu">
             周亚，重庆人，毕业于西南大学机电一体化专业，自动化技术员职称，2017年2月进入重庆医药和平物流工作，主要从事自动化设备运维、设备层通讯，数据维护，控制优化。
             <br> 三菱、欧姆龙、西门子PLC编程与调试，unix工控机优化、汇川伺服，自动化组态，视觉系统优化、总线通讯、各种变频器运用。
-
           </div>
           <div class="shuJu lieBiaoXiang mgt8 baiSe yinYing ziti suoJin wenZhiYiChu">
             2003年至2017年，上海展升自动化工作，从电气负责人做起，历经设备制造、项目施工、程序编写、调试、项目SV、运维，积累了丰富的行业全系列工作经验。
             与日本(大福)、韩国(大福)、德国(德马泰克)、澳大利亚(德马泰克)、奥地利(德马泰克)等国工程师在中国大陆地区一同参与近百项中大型工程项目，在工作中获得一直高度肯定。
             从制造到安装，从项目负责到编程调试，历经设备制造到客户使用，及售后的全套流程。
           </div>
-
           <div class="shuJu lieBiaoXiang mgt8 baiSe yinYing ziti suoJin wenZhiYiChu" ;">
             上海YKK、
             上海三洋、
@@ -368,7 +292,6 @@
             阿斯利康、
             高明海天..........等百余项大中型项目。
           </div>
-
           <div class="shuJu lieBiaoXiang mgt8 baiSe yinYing">
             <dt style="color: brown;">友情链接</dt>
             <dd><a target="_blank" rel="nofollow" href="https://www.daifuku.com/cn/"> 大福(中国)物流设备有限公司 </a></dd>
@@ -384,15 +307,11 @@
           </div>
         </div>
       </div>
-      <!-- 右区 -->
       <div style="flex: 1" class="youQu flex column mgr8 mgt8">
-        <!-- 提示区 -->
         <div style="height: 700px" class="baiSe yinYing">待定</div>
-        <!-- 消息区 -->
         <div style="height: 700px" class="mgt8 baiSe yinYing">待定</div>
       </div>
     </div>
   </div>
 </body>
-
 </html>
