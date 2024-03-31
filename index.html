@@ -42,8 +42,8 @@
 
     /* 阴影 */
     .yinYing {
-      box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
-        rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+      box-shadow: rgb(0 0 0 / 20%) 0px 4px 1px -1px,
+        rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
     }
 
     /* 白色背景 */
@@ -81,12 +81,12 @@
     }
 
     /* 导航条 */
-    .daoHang {
+    /* .daoHang {
       padding: 10px 20px;
       border-bottom: 1px solid rgb(201, 201, 201);
       font-size: 14px;
       color: #666;
-    }
+    } */
 
     .neiRong::-webkit-scrollbar {
       display: none;
@@ -205,6 +205,25 @@
         transform: translateX(-100%)
       }
     }
+
+    .yinYing {
+      background: #fdd4b5;
+      /* width: 100%; */
+      /* font-size: 18px; */
+      /* color: #5f84a8; */
+      border: 1px #e7daca solid;
+      border-radius: 5px;
+      margin: 0px 0px 7px 0px;
+      box-shadow: 5px 5px 10px gray;
+      background: -webkit-linear-gradient(left, #e7daca, #ffc987);
+      /* Safari 5.1 - 6.0 */
+      background: -o-linear-gradient(right, #e7daca, #ffc987);
+      /* Opera 11.1 - 12.0 */
+      background: -moz-linear-gradient(right, #e7daca, #ffc987);
+      /* Firefox 3.6 - 15 */
+      background: linear-gradient(to right, #e7daca, #ffc987);
+      /* 标准的语法（必须放在最后） */
+    }
   </style>
 </head>
 
@@ -272,7 +291,7 @@
             从制造到安装，从项目负责到编程调试，历经设备制造到客户使用，及售后的全套流程。
           </div>
 
-          <div class="shuJu lieBiaoXiang mgt8 baiSe yinYing ziti suoJin wenZhiYiChu">
+          <div class="shuJu lieBiaoXiang mgt8 baiSe yinYing ziti suoJin wenZhiYiChu" style="color: rgb(255, 168, 127);">
             上海YKK、
             上海三洋、
             上海上标、
@@ -309,22 +328,8 @@
             天津出光
           </div>
           <div class="shuJu lieBiaoXiang mgt8 baiSe yinYing ziti suoJin wenZhiYiChu">
-            天津天狮、
-            奇瑞路虎、
-            宁波大众、
-            安泰物流、
-            广东合生元、
-            广州TS新项目、
-            广州宏仁、
-            广州松下、
-            广州洁柔、
-            广州艾帕克、
-            延锋江森、
-            张家港扬子、
-            徐州烟草、
-            成都伊利、
-            成都洁柔、
-            无锡东元、
+            天津天狮、奇瑞路虎、宁波大众、安泰物流、广东合生元、广州TS新项目、广州宏仁、广州松下、
+            广州洁柔、广州艾帕克、延锋江森、张家港扬子、徐州烟草、成都伊利、成都洁柔、无锡东元、
             无锡工装、
             日立化成、
             昆山VF、
@@ -382,9 +387,9 @@
       <!-- 右区 -->
       <div style="flex: 1" class="youQu flex column mgr8 mgt8">
         <!-- 提示区 -->
-        <div style="height: 150px" class="baiSe yinYing">待定</div>
+        <div style="height: 700px" class="baiSe yinYing">待定</div>
         <!-- 消息区 -->
-        <div style="height: 300px" class="mgt8 baiSe yinYing">待定</div>
+        <div style="height: 700px" class="mgt8 baiSe yinYing">待定</div>
       </div>
     </div>
   </div>
