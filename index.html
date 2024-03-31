@@ -69,6 +69,7 @@
     /* 四个小盒子 */
     .shuJu {
       height: 150px;
+      padding: 10px;
     }
 
     /* 中间的大盒子 */
@@ -120,16 +121,24 @@
         flex: auto;
         height: auto;
         font-size: 10px;
+        scroll-padding: 8px;
+        padding: 10px;
       }
 
       .touBuShuJu {
         margin: 0 0 8px;
         /* flex: auto; */
         flex-wrap: nowrap;
-        width: 380px;
+        width: 320px;
         height: 60px;
         font-size: 10px;
+        border: none;
+        background-color: #eee;
         /* white-space: nowrap; */
+      }
+
+      .yinYing {
+        box-shadow: none;
       }
     }
 
@@ -174,7 +183,7 @@
     .scroll span {
       display: inline-block;
       /*inline样式不能使用动画*/
-      animation: scroll 5s linear infinite;
+      animation: scroll 10s linear infinite;
     }
 
     @keyframes scroll {
