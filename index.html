@@ -67,7 +67,7 @@
     }
 
     /* 四个小盒子 */
-    s .shuJu {
+    .shuJu {
       height: 150px;
     }
 
@@ -120,6 +120,14 @@
         flex: auto;
         height: auto;
         font-size: 10px;
+      }
+
+      .touBuShuJu {
+        margin: 0 0 8px;
+        /* flex: auto; */
+        height: 60px;
+        font-size: 10px;
+        white-space: nowrap;
       }
     }
 
@@ -204,7 +212,7 @@
   <!-- 主区域 -->
   <div class="flex flex1 column">
     <!-- 头部栏 -->
-    <div class="shuJu baiSe yinYing suoJin touBuLan scroll">
+    <div class="baiSe yinYing suoJin touBuLan touBuShuJu scroll">
       <span> 秉承工匠精神，21年专注自动化，参与中国境内大中型自动化仓储项目100余项。</span>
       <!-- <h1 style="font-size: 16px;color: rgb(255, 0, 217);"> 秉承工匠精神，21年专注自动化</h1> -->
     </div>
@@ -213,7 +221,7 @@
       <!-- 左区 -->
       <div style="flex: 3" class="flex column mg8">
         <!-- 数据区 -->
-        <div class=" flex shuJuQu ">
+        <div class="ceBian flex shuJuQu ">
           <!-- 四个小块显示重点数据 -->
           <div class=" baiSe yinYing flex1 mgr8 column" style="padding: 10px;">
             <nobr>
