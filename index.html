@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,63 +12,80 @@
       height: 100vh;
       background-color: #eee;
     }
+
     .flex {
       display: flex;
     }
+
     .flex1 {
       flex: 1;
     }
+
     .column {
       flex-direction: column;
     }
+
     .yinYing1 {
       box-shadow: rgb(0 0 0 / 20%) 0px 4px 1px -1px,
         rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
     }
+
     .baiSe {
       background-color: #fff;
     }
+
     .mg8 {
       margin: 10px;
     }
+
     .mgr8 {
       margin-right: 10px;
     }
+
     .mgt8 {
       margin-top: 10px;
     }
+
     .shuJu {
       height: 150px;
       padding: 10px;
     }
+
     .lieBiaoXiang {
       height: 160px;
       line-height: 30px;
       font-size: 25px;
       padding-top: 10px;
     }
+
     .daoHang {
       padding: 10px 20px;
       border-bottom: 1px solid rgb(201, 201, 201);
       font-size: 14px;
       color: #666;
-    } 
+    }
+
     .neiRong::-webkit-scrollbar {
       display: none;
     }
+
     @media (max-width: 600px) {
       .ceBian {
         display: none;
       }
+
       .neiRong {
         flex-direction: column;
       }
+
       .shuJuQu {
         flex-direction: column;
       }
+
       .youQu {
         margin-left: 8px;
       }
+
       .shuJu {
         margin: 0 0 8px;
         flex: auto;
@@ -76,37 +94,42 @@
         scroll-padding: 8px;
         padding: 10px;
       }
+
       .touBuShuJu {
         margin: 0 0 8px;
         flex-wrap: nowrap;
-        width: 320px;
+        /* width: 320px; */
         height: 60px;
         font-size: 10px;
         border: none;
         background-color: #eee;
       }
-      .yinYing {
-        box-shadow: none;
-      }
+
     }
+
     .img {
       height: 150px;
     }
+
     @keyframes rotation {
       0% {
         -webkit-transform: rotate(0deg);
       }
+
       100% {
         -webkit-transform: rotate(360deg);
       }
     }
+
     .ziti {
       font-family: kaiti;
       font-weight: bold;
     }
+
     .suoJin {
       text-indent: 2em;
     }
+
     .touBuLan {
       height: 60px;
       z-index: 2;
@@ -115,25 +138,31 @@
       color: red;
       font-style: italic;
     }
+
     .wenZhiYiChu {
       overflow: hidden;
       text-overflow: ellipsis;
     }
+
     .scroll {
       color: red;
     }
+
     .scroll span {
       display: inline-block;
       animation: scroll 10s linear infinite;
     }
+
     @keyframes scroll {
       from {
         transform: translateX(500px)
       }
+
       to {
         transform: translateX(-100%)
       }
     }
+
     .yinYing {
       background: #fdd4b5;
       border: 1px #e7daca solid;
@@ -159,7 +188,7 @@
       <img alt="logo" src="https://p0.ssl.qhimgs1.com/sdr/400__/t015050908d1d36328a.png" width="40px" height="40px" />
       <div style="margin-left: 15px;color: red;font-family: kaiti;">周亚</div>
     </div>
-  
+
     <div class="flex1">
       <div class="daoHang">导航预留</div>
       <div class="daoHang">导航预留</div>
@@ -168,13 +197,13 @@
       <div class="daoHang">导航预留</div>
     </div>
   </div>
- 
+
   <div class="flex flex1 column">
-    <div class="baiSe yinYing suoJin touBuLan touBuShuJu scroll">
+    <div class="baiSe  yinYing  suoJin touBuLan touBuShuJu scroll" >
       <span>
         <nobr>传承工匠精神，21年专注自动化，中国近百余项中大型自动化仓储项目参与者。</nobr>
       </span>
-    </div>   
+    </div>
     <div class="flex flex1 neiRong" style="overflow: auto">
       <div style="flex: 3" class="flex column mg8">
         <div class="ceBian flex shuJuQu ">
@@ -189,8 +218,8 @@
                 --><img class="img" src="http://i1.go2yd.com/image.php?url=0I0aSsXktk" alt="图片四">
             </nobr>
           </div>
-        </div>       
-        <div class="flex column">         
+        </div>
+        <div class="flex column">
           <div class="shuJu lieBiaoXiang mgt8 baiSe yinYing ziti suoJin wenZhiYiChu">
             周亚，重庆人，毕业于西南大学机电一体化专业，自动化技术员职称，2017年2月进入重庆医药和平物流工作，主要从事自动化设备运维、设备层通讯，数据维护，控制优化。
             <br> 三菱、欧姆龙、西门子PLC编程与调试，unix工控机优化、汇川伺服，自动化组态，视觉系统优化、总线通讯、各种变频器运用。
@@ -299,4 +328,5 @@
     </div>
   </div>
 </body>
+
 </html>
