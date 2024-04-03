@@ -97,10 +97,11 @@
         padding: 10px;
       }
 
-            .touBuLan {
+      .touBuLan {
         height: 60px;
         font-size: 12px;
       }
+
 
     }
 
@@ -229,6 +230,23 @@
         }
         var mychar = document.getElementById("tb");
         mychar.style.width = winWidth + "px";
+
+
+        if (winWidth < 600) {
+          mychar.style.height = 60 + "px"
+          mychar.style.fontSize = 14 + "px"
+          mychar.style.lineHeight = 20 + "px"
+          mychar.style.padding = 25 + "px"
+          mychar.style.textAlign = "center"
+        } else {
+          mychar.style.height = 80 + "px"
+          mychar.style.fontSize = 25 + "px"
+          mychar.style.lineHeight = 40 + "px"
+          mychar.style.padding = 25 + "px"
+          mychar.style.textAlign = "center"
+        }
+
+
       }
       findDimensions();
       //调用函数，获取数值
@@ -301,4 +319,5 @@
     </div>
   </div>
 </body>
+
 </html>
