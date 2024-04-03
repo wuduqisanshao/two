@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <!-- saved from url=(0036)https://wuduqisanshao.github.io/two/ -->
 <html lang="zh-CN">
-
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>wuduqisanshao</title>
@@ -14,80 +12,63 @@
       height: 100vh;
       background-color: #eee;
     }
-
     .flex {
       display: flex;
     }
-
     .flex1 {
       flex: 1;
     }
-
     .column {
       flex-direction: column;
     }
-
     .yinYing1 {
       box-shadow: rgb(0 0 0 / 20%) 0px 4px 1px -1px,
         rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
     }
-
     .baiSe {
       background-color: #fff;
     }
-
     .mg8 {
       margin: 10px;
     }
-
     .mgr8 {
       margin-right: 10px;
     }
-
     .mgt8 {
       margin-top: 10px;
     }
-
     .shuJu {
       height: 150px;
       padding: 10px;
     }
-
     .lieBiaoXiang {
       height: 160px;
       line-height: 30px;
       font-size: 25px;
       padding-top: 10px;
     }
-
     .daoHang {
       padding: 10px 20px;
       border-bottom: 1px solid rgb(201, 201, 201);
       font-size: 14px;
       color: #666;
     }
-
     .neiRong::-webkit-scrollbar {
       display: none;
     }
-
     @media (max-width: 600px) {
       .ceBian {
         display: none;
       }
-
       .neiRong {
         flex-direction: column;
       }
-
       .shuJuQu {
         flex-direction: column;
       }
-
       .youQu {
         margin-left: 8px;
       }
-
       .shuJu {
         margin: 0 0 8px;
         flex: auto;
@@ -96,38 +77,29 @@
         scroll-padding: 8px;
         padding: 10px;
       }
-
       .touBuLan {
         height: 60px;
         font-size: 12px;
       }
-
-
     }
-
     .img {
       height: 150px;
     }
-
     @keyframes rotation {
       0% {
         -webkit-transform: rotate(0deg);
       }
-
       100% {
         -webkit-transform: rotate(360deg);
       }
     }
-
     .ziti {
       font-family: kaiti;
       font-weight: bold;
     }
-
     .suoJin {
       text-indent: 2em;
     }
-
     .touBuLan {
       height: 80px;
       line-height: 40px;
@@ -135,33 +107,26 @@
       color: red;
       font-style: italic;
       text-align: center;
-
     }
-
     .wenZhiYiChu {
       overflow: hidden;
       text-overflow: ellipsis;
     }
-
     .scroll {
       color: red;
     }
-
     .scroll span {
       display: inline-block;
       animation: scroll 10s linear infinite;
     }
-
     @keyframes scroll {
       from {
         transform: translateX(0px)
       }
-
       to {
         transform: translateX(0%)
       }
     }
-
     .yinYing {
       background: #fdd4b5;
       border: 1px #e7daca solid;
@@ -175,7 +140,6 @@
     }
   </style>
 </head>
-
 <body class="flex">
   <div style="width: 200px; z-index: 3" class="ceBian flex column baiSe yinYing">
     <div style="
@@ -187,7 +151,6 @@
       <img alt="logo" src="./wuduqisanshao_files/t015050908d1d36328a.png" width="40px" height="40px">
       <div style="margin-left: 15px;color: red;font-family: kaiti;">周亚</div>
     </div>
-
     <div class="flex1">
       <div class="daoHang">导航预留</div>
       <div class="daoHang">导航预留</div>
@@ -196,7 +159,6 @@
       <div class="daoHang">导航预留</div>
     </div>
   </div>
-
   <div class="flex flex1 column">
     <div class=" yinYing suoJin touBuLan " id="tb">
       <span>
@@ -205,33 +167,25 @@
         </nobr>
       </span>
     </div>
-
-
     <script type="text/javascript">
-
       var winWidth = 0;
       var winHeight = 0;
-      function findDimensions() //函数：获取尺寸
+      function findDimensions() 
       {
-        //获取窗口宽度
         if (window.innerWidth)
           winWidth = window.innerWidth;
         else if ((document.body) && (document.body.clientWidth))
           winWidth = document.body.clientWidth;
-        //获取窗口高度
         if (window.innerHeight)
           winHeight = window.innerHeight;
         else if ((document.body) && (document.body.clientHeight))
           winHeight = document.body.clientHeight;
-        //通过深入Document内部对body进行检测，获取窗口大小
         if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth) {
           winHeight = document.documentElement.clientHeight;
           winWidth = document.documentElement.clientWidth;
         }
         var mychar = document.getElementById("tb");
         mychar.style.width = winWidth + "px";
-
-
         if (winWidth < 600) {
           mychar.style.height = 60 + "px"
           mychar.style.fontSize = 14 + "px"
@@ -245,16 +199,10 @@
           mychar.style.padding = 25 + "px"
           mychar.style.textAlign = "center"
         }
-
-
       }
       findDimensions();
-      //调用函数，获取数值
       window.onresize = findDimensions;
-      //-->
     </script>
-
-
     <div class="flex flex1 neiRong" style="overflow: auto">
       <div style="flex: 3" class="flex column mg8">
         <div class="ceBian flex shuJuQu ">
