@@ -96,14 +96,6 @@
     .suoJin {
       text-indent: 2em;
     }
-    .touBuLan {
-      height: 80px;
-      line-height: 40px;
-      font-size: 25px;
-      color: red;
-      font-style: italic;
-      text-align: center;
-    }
     .wenZhiYiChu {
       overflow: hidden;
       text-overflow: ellipsis;
@@ -156,7 +148,7 @@
     </div>
   </div>
   <div class="flex flex1 column">
-    <div class=" yinYing suoJin touBuLan " id="tb">
+    <div class=" yinYing suoJin " id="tb">
       <span>
         <nobr>传承工匠精神，21年专注自动化，
           <br> 近百余项中大型自动化仓储项目参与者。
@@ -188,12 +180,17 @@
           mychar.style.lineHeight = 20 + "px"
           mychar.style.paddingTop = 25 + "px"
           mychar.style.textAlign = "center"
+          mychar.style.color = "red"
+          mychar.style.fontStyle = "italic"
         } else {
           mychar.style.height = 80 + "px"
           mychar.style.fontSize = 25 + "px"
           mychar.style.lineHeight = 40 + "px"
           mychar.style.padding = 25 + "px"
           mychar.style.textAlign = "center"
+          mychar.style.color = "red"
+          mychar.style.fontStyle = "italic"
+          
         }
       }
       findDimensions();
