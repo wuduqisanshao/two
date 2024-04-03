@@ -97,10 +97,6 @@
         padding: 10px;
       }
 
-      .touBuShuJu {
-        font-size: 10px;
-      }
-
     }
 
     .img {
@@ -133,7 +129,8 @@
       font-size: 25px;
       color: red;
       font-style: italic;
-      padding: auto;
+      padding: 50px;
+      margin: 50px;
     }
 
     .wenZhiYiChu {
@@ -156,7 +153,7 @@
       }
 
       to {
-        transform: translateX(-100%)
+        transform: translateX(0%)
       }
     }
 
@@ -196,7 +193,7 @@
   </div>
 
   <div class="flex flex1 column">
-    <div class="touBuShuJu baiSe  yinYing  suoJin touBuLan  scroll" id="form1">
+    <div class="shuJu yinYing suoJin touBuLan " id="tb">
       <span>
         <nobr>传承工匠精神，21年专注自动化，
           <br> 近百余项中大型自动化仓储项目参与者。
@@ -226,8 +223,8 @@
           winHeight = document.documentElement.clientHeight;
           winWidth = document.documentElement.clientWidth;
         }
-        var mychar = document.getElementById("form1");
-        mychar.style.width = winWidth + "px";
+        var mychar = document.getElementById("tb");
+        mychar.style.width = winWidth - 50 + "px";
       }
       findDimensions();
       //调用函数，获取数值
