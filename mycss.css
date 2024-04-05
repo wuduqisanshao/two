@@ -148,3 +148,11 @@ body {
   background: -moz-linear-gradient(right, #e7daca, #ffc987);
   background: linear-gradient(to right, #e7daca, #ffc987);
 }
+
+ a {
+      text-decoration: none;
+    }
+
+  a:hover {
+      text-decoration: underline;
+    }
