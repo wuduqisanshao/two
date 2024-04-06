@@ -96,7 +96,17 @@
     }
 
     .img {
-      height: 150px;
+      height: 80%;
+      object-fit: cover;
+      width: 25%;
+    }
+
+    .cs {
+      padding-left: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 10px;
+
     }
 
     @keyframes rotation {
@@ -169,6 +179,11 @@
     a:hover {
       text-decoration: underline;
     }
+
+    hr {
+      border: 0px;
+      border-bottom: 2px solid red;
+    }
   </style>
 
 </head>
@@ -181,7 +196,9 @@
           justify-content: center;
           border-bottom: 1px solid #999;
         " class="flex">
-      <img alt="logo" src="http://img.mp.itc.cn/q_70,c_zoom,w_640/upload/20170422/d8095cd9c4c14c84ac78813afe52eb07_th.jpeg" width="40px" height="40px">
+      <img alt="logo"
+        src="http://img.mp.itc.cn/q_70,c_zoom,w_640/upload/20170422/d8095cd9c4c14c84ac78813afe52eb07_th.jpeg"
+        width="40px" height="40px">
       <div style="margin-left: 15px;color: red;font-family: kaiti;">周亚</div>
     </div>
 
@@ -242,7 +259,7 @@
     <div class="flex flex1 neiRong" style="overflow: auto">
       <div style="flex: 3" class="flex column mg8">
         <div class="ceBian flex shuJuQu ">
-          <div class=" baiSe yinYing flex1 mgr8 column" style="padding: 10px;overflow:hidden;">
+          <div class=" baiSe yinYing flex1 mgr8 cs column" style="padding-top: 3%;overflow:hidden;">
             <nobr>
               <img class="img" src="https://p1.ssl.qhimgs1.com/sdr/400__/t01fd510607718120bb.jpg" alt="图片一"><!--
               --><img class="img" src="https://p1.ssl.qhimgs1.com/sdr/400__/t01f48da0b7b8bfa1ab.gif" alt="图片二"><!--
@@ -250,6 +267,9 @@
                 --><img class="img"
                 src="https://static.50yc.com/info/2015/11/873a0f2c-0371-467b-a981-95f52a8abc8f_org.jpg" alt="图片四">
             </nobr>
+            <hr>
+            <hr>
+            <hr>
           </div>
         </div>
         <div class="flex column">
