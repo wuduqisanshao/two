@@ -188,29 +188,18 @@
 </head>
 
 <body class="flex">
-   <!-- <audio autoplay="autoplay" controls="controls" loop="loop" preload="auto"
-    src="https://webfs.hw.kugou.com/202404062028/40ae1cefbd8dcea86afa4ac4ad3c63ef/KGTX/CLTX001/1689cd531a34c6cdec72fc151e3999a5.mp3">
-    你的浏览器版本太低，不支持audio标签
-  </audio> -->
-  <!-- <audio id="Jaudio" class="media-audio" autoplay="autoplay" controls="controls" loop="loop" preload="auto"
-    src="https://webfs.hw.kugou.com/202404062028/40ae1cefbd8dcea86afa4ac4ad3c63ef/KGTX/CLTX001/1689cd531a34c6cdec72fc151e3999a5.mp3"
-    preload loop="loop"></audio> -->
 
   <audio id="musicid"
     src="https://webfs.hw.kugou.com/202404062028/40ae1cefbd8dcea86afa4ac4ad3c63ef/KGTX/CLTX001/1689cd531a34c6cdec72fc151e3999a5.mp3"
     preload="preload" autoplay="autoplay" loop="loop">您的浏览器不支持 audio标签。</audio>
 
   <script type="text/javascript">
-    // 音乐播放
     function autoPlayMusic() {
-      // 自动播放音乐效果，解决浏览器或者APP自动播放问题
       function musicInBrowserHandler() {
         musicPlay(true);
         document.body.removeEventListener('touchstart', musicInBrowserHandler);
       }
       document.body.addEventListener('touchstart', musicInBrowserHandler);
-
-      // 自动播放音乐效果，解决微信自动播放问题
       function musicInWeixinHandler() {
         musicPlay(true);
         document.addEventListener("WeixinJSBridgeReady", function () {
