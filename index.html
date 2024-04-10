@@ -1,174 +1,80 @@
 <!DOCTYPE html>
-<!-- saved from url=(0036)https://wuduqisanshao.github.io/two/ -->
-<html lang="zh-CN">
+<html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>周亚简约风</title>
-  <!-- <link rel="stylesheet" href="./mycss.css"> -->
 
   <style>
-    body {
+    * {
       margin: 0;
-      height: 100vh;
-      background-color: #eee;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    .flex {
-      display: flex;
-    }
 
-    .flex1 {
-      flex: 1;
-    }
 
-    .column {
-      flex-direction: column;
-    }
-
-    .baiSe {
-      background-color: #fff;
-    }
-
-    .mg8 {
-      margin: 10px;
-    }
-
-    .mgr8 {
-      margin-right: 10px;
-    }
-
-    .mgt8 {
-      margin-top: 10px;
-    }
-
-    .shuJu {
-      height: 150px;
-      padding: 10px;
-    }
-
-    .lieBiaoXiang {
-      height: auto;
-      line-height: 30px;
-      font-size: 25px;
-      padding-top: 10px;
-    }
-
-    .daoHang {
-      padding: 10px 20px;
-      border-bottom: 1px solid rgb(201, 201, 201);
-      font-size: 14px;
-      color: #666;
-    }
-
-    .neiRong::-webkit-scrollbar {
-      display: none;
-    }
-
-    @media (max-width: 600px) {
-      .ceBian {
-        display: none;
-      }
-
-      .neiRong {
-        flex-direction: column;
-      }
-
-      .shuJuQu {
-        flex-direction: column;
-      }
-
-      .youQu {
-        margin-left: 8px;
-      }
-
-      .shuJu {
-        margin: 0 0 8px;
-        flex: auto;
-        height: auto;
-        font-size: 10px;
-        scroll-padding: 8px;
-        padding: 10px;
-      }
-    }
-
-    .img {
-      height: 80%;
-      object-fit: cover;
-      width: 25%;
-    }
-
-    .cs {
-      padding-left: 10px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-right: 10px;
-
-    }
-
-    @keyframes rotation {
-      0% {
-        -webkit-transform: rotate(0deg);
-      }
-
-      100% {
-        -webkit-transform: rotate(360deg);
-      }
-    }
-
-    .ziti {
-      font-family: kaiti;
-      font-weight: bold;
-    }
-
-    .suoJin {
-      text-indent: 2em;
-    }
-
-    .touBuLan {
-
-      color: red;
+    .headQu {
+      margin: 0 auto;
+      width: 1000px;
+      height: 100px;
+      background-color: bisque;
+      color: brown;
       font-style: italic;
       text-align: center;
-
-    }
-
-    .wenZhiYiChu {
       overflow: hidden;
       text-overflow: ellipsis;
+      line-height: 80px;
+      font-family: kaiti;
+      font-weight: bold;
+      font-size: 25px;
+
     }
 
-    .scroll {
-      color: red;
+    .headQu hr {
+      border: 0px;
+      border-bottom: 2px solid red;
     }
 
-    .scroll span {
-      display: inline-block;
-      animation: scroll 10s linear infinite;
+    .bannerQu {
+      margin: 0 auto;
+      justify-content: center;
+      align-content: center;
+      width: 1000px;
+      height: 200px;
+      background-color: antiquewhite;
     }
 
-    @keyframes scroll {
-      from {
-        transform: translateX(0px)
-      }
-
-      to {
-        transform: translateX(0%)
-      }
+    .bannerQu img {
+      height: 163px;
     }
 
-    .yinYing {
-      background: #fdd4b5;
-      border: 1px #e7daca solid;
-      border-radius: 5px;
-      margin: 0px 0px 7px 0px;
-      box-shadow: 5px 5px 10px gray;
-      background: -webkit-linear-gradient(left, #e7daca, #ffc987);
-      background: -o-linear-gradient(right, #e7daca, #ffc987);
-      background: -moz-linear-gradient(right, #e7daca, #ffc987);
-      background: linear-gradient(to right, #e7daca, #ffc987);
+    .textQu {
+      margin: 0 auto;
+      width: 1000px;
+      height: 800px;
+      background-color: rgb(248, 215, 250);
+      text-indent: 2em;
+      padding: 2em;
+      /* font-style: italic; */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 35px;
+      font-family: kaiti;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .linkQu {
+      margin: 0 auto;
+      width: 1000px;
+      height: 200px;
+      background-color: rgb(250, 215, 215);
+      line-height: 30px;
+      font-size: 20px;
+      padding-top: 1em;
+      padding-left: 2em;
     }
 
     a {
@@ -179,27 +85,121 @@
       text-decoration: underline;
     }
 
-    hr {
-      border: 0px;
-      border-bottom: 2px solid red;
+    .userQu {
+      margin: 0 auto;
+      width: 1000px;
+      height: 100px;
+      background-color: rgb(250, 215, 215);
+    }
+
+    .userQu p {
+      text-align: center;
+      padding: 10px
+    }
+
+    .yinYing {
+      background: #fdd4b5;
+      border: 1px #e7daca solid;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      /* margin: 0px 0px 7px 0px; */
+      box-shadow: 5px 5px 10px gray;
+      background: -webkit-linear-gradient(left, #e7daca, #ffc987);
+      background: -o-linear-gradient(right, #e7daca, #ffc987);
+      background: -moz-linear-gradient(right, #e7daca, #ffc987);
+      background: linear-gradient(to right, #e7daca, #ffc987);
+    }
+
+
+    @media (max-width: 600px) {
+      .bannerQu {
+        display: none;
+      }
+
+      .headQu {
+        margin: 0 auto;
+        width: auto;
+        height: auto;
+        background-color: bisque;
+        color: brown;
+        font-style: italic;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 80px;
+        font-family: kaiti;
+        font-weight: bold;
+        font-size: 25px;
+
+      }
+
+      .headQu hr {
+        border: 0px;
+        border-bottom: 2px solid red;
+      }
+
+      .bannerQu {
+        margin: 0 auto;
+        justify-content: center;
+        align-content: center;
+        width: auto;
+        height: auto;
+        background-color: antiquewhite;
+      }
+
+      .bannerQu img {
+        height: 163px;
+      }
+
+      .textQu {
+        margin: 0 auto;
+        width: auto;
+        height: auto;
+        background-color: rgb(248, 215, 250);
+        text-indent: 2em;
+        padding: 2em;
+        /* font-style: italic; */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 35px;
+        font-family: kaiti;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .linkQu {
+        margin: 0 auto;
+        width: auto;
+        height: auto;
+        background-color: rgb(250, 215, 215);
+        line-height: 30px;
+        font-size: 20px;
+        padding-top: 1em;
+        padding-left: 2em;
+      }
+
+      .userQu {
+        margin: 0 auto;
+        width: auto;
+        height: auto;
+        background-color: rgb(250, 215, 215);
+      }
     }
   </style>
 
-</head>
-
-<body class="flex">
-
-  <audio id="musicid"
-    src="./793503900.mp3"
-    preload="preload" autoplay="autoplay" loop="loop">您的浏览器不支持 audio标签。</audio>
+  <audio id="musicid" src="./793503900.mp3" preload="preload" autoplay="autoplay" loop="loop">您的浏览器不支持 audio标签。</audio>
 
   <script type="text/javascript">
+    // 音乐播放
     function autoPlayMusic() {
+      // 自动播放音乐效果，解决浏览器或者APP自动播放问题
       function musicInBrowserHandler() {
         musicPlay(true);
         document.body.removeEventListener('touchstart', musicInBrowserHandler);
       }
       document.body.addEventListener('touchstart', musicInBrowserHandler);
+
+      // 自动播放音乐效果，解决微信自动播放问题
       function musicInWeixinHandler() {
         musicPlay(true);
         document.addEventListener("WeixinJSBridgeReady", function () {
@@ -220,142 +220,104 @@
     }
     autoPlayMusic();
   </script>
-  
-  <div style="width: 200px; z-index: 3" class="ceBian flex column baiSe yinYing">
-    <div style="
-          padding: 10px;
-          align-items: center;
-          justify-content: center;
-          border-bottom: 1px solid #999;
-        " class="flex">
-      <img alt="logo"
-        src="http://img.mp.itc.cn/q_70,c_zoom,w_640/upload/20170422/d8095cd9c4c14c84ac78813afe52eb07_th.jpeg"
-        width="40px" height="40px">
-      <div style="margin-left: 15px;color: red;font-family: kaiti;">周亚</div>
-    </div>
+</head>
 
-    <div class="flex1">
-      <div class="daoHang">
-         <a target="_blank" rel="nofollow" href="./多深度穿梭存储系统“D3”.html"> 穿梭库
-        </a>
-      </div>
-      <div class="daoHang">导航预留</div>
-      <div class="daoHang">导航预留</div>
-      <div class="daoHang">导航预留</div>
-      <div class="daoHang">导航预留</div>
-    </div>
+<body>
+  <div class="headQu yinYing">
+    <strong> 传承工匠精神，21年专注自动化， 近百余项中大型自动化仓储项目参与者。</strong>
+    <hr>
+  </div>
+  <div class="bannerQu yinYing">
+    <hr style="border: 0px;border-bottom: 2px solid rgb(255, 0, 204);">
+    <nobr>
+      <img class="img" src="https://p1.ssl.qhimgs1.com/sdr/400__/t01fd510607718120bb.jpg" alt="图片一"><!--
+    --><img class="img" src="https://p1.ssl.qhimgs1.com/sdr/400__/t01f48da0b7b8bfa1ab.gif" alt="图片二"><!--
+      --><img class="img" src="https://p2.ssl.qhimgs1.com/sdr/400__/t0139116345d154859c.jpg" alt="图片三"><!--
+      --><img class="img" src="https://static.50yc.com/info/2015/11/873a0f2c-0371-467b-a981-95f52a8abc8f_org.jpg"
+        alt="图片四">
+    </nobr>
+    <hr>
+    <hr style="border: 0px;border-bottom: 2px solid blue;">
+    <hr>
+  </div>
+  </div>
+  <div class="textQu yinYing" id="sj">
+    <p> 周亚，重庆人，毕业于西南大学机电一体化专业，自动化技术员职称，2017年2月进入重庆医药和平物流工作，主要从事自动化设备运维、设备层通讯，数据维护，控制优化。</p>
+    <hr>
+    <p style="color: deeppink;"> 三菱、欧姆龙、西门子PLC编程与调试，unix工控机优化、汇川伺服，自动化组态，视觉系统优化、总线通讯、各种变频器运用。</p>
+    <hr>
+    <p> 2003年至2017年，上海展升自动化工作，从电气负责人做起，历经设备制造、项目施工、程序编写、调试、项目SV、运维，积累了丰富的行业全系列工作经验。
+      与日本(大福)、韩国(大福)、德国(德马泰克)、澳大利亚(德马泰克)、奥地利(德马泰克)等国工程师在中国大陆地区一同参与近百项中大型工程项目，在工作中获得一直高度肯定。
+      从制造到安装，从项目负责到编程调试，历经设备制造到客户使用，及售后的全套流程。</p>
+    <hr>
+    <p>上海YKK、上海三洋、上海上标、上海会田、上海和黄、上海嘉麟杰、上海大众、上海大创、
+      上海日东、上海昭和、上海来伊份、上海标件、上海森松、上海理研、中山富拉斯特、中工集团、
+      仪征大众、内蒙伊利、勃林格殷格翰、北京嘉事堂、南昌卷烟、南昌海立、南通会田、南通森菘、
+      厦门利胜、厦门卷烟、厦门友达、台升家具、合肥安泰、合肥尼普洛、嘉善台升、天津中粮、天津京瓷、天津出光、
+      天津天狮、奇瑞路虎、宁波大众、安泰物流、广东合生元、广州TS新项目、广州宏仁、广州松下、
+      广州洁柔、广州艾帕克、延锋江森、张家港扬子、徐州烟草、成都伊利、成都洁柔、无锡东元、
+      无锡工装、日立化成、昆山VF、昆山台光、昆山神讯、普利斯通、杭州可乐、杭州贝因美、
+      梅州伊利、武汉提爱思、沈阳通用、深圳YKK、深圳卷烟、深圳日东、湖南恒裕、湛江晨鸣、
+      湛江美伦、芜湖卷烟、苏州NGK、苏州友达、苏州太阳、苏州快捷、苏州日东、西安华润、郑州格力、重庆B8、
+      重庆医药、重庆机电、重庆永辉、重庆药友、重庆贝乐、长沙大众、长泰、阿斯利康、
+      高明海天..........等百余项中大型项目。</p>
   </div>
 
-  <div class="flex flex1 column">
-    <div class=" yinYing  touBuLan wenZhiYiChu" id="tb">
-      <nobr> <strong> 传承工匠精神，21年专注自动化，
-          <br> 近百余项中大型自动化仓储项目参与者。</strong>
-      </nobr>
-      <hr>
-    </div>
-
-    <script type="text/javascript">
-      var winWidth = 0;
-      var winHeight = 0;
-      function findDimensions() {
-        if (window.innerWidth)
-          winWidth = window.innerWidth;
-        else if ((document.body) && (document.body.clientWidth))
-          winWidth = document.body.clientWidth;
-        if (window.innerHeight)
-          winHeight = window.innerHeight;
-        else if ((document.body) && (document.body.clientHeight))
-          winHeight = document.body.clientHeight;
-        if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth) {
-          winHeight = document.documentElement.clientHeight;
-          winWidth = document.documentElement.clientWidth;
-        }
-        var mychar = document.getElementById("tb");
-        mychar.style.width = winWidth + "px";
-
-        if (winWidth < 500) {
-          mychar.style.height = "auto"
-          mychar.style.fontSize = 14 + "px"
-          mychar.style.lineHeight = 20 + "px"
-          mychar.style.paddingTop = 15 + "px"
-          mychar.style.textAlign = "center"
-        } else {
-          mychar.style.height = "auto"
-          mychar.style.fontSize = 25 + "px"
-          mychar.style.lineHeight = 40 + "px"
-          mychar.style.padding = 25 + "px"
-          mychar.style.textAlign = "center"
-        }
+  <script type="text/javascript">
+    var winWidth = 0;
+    var winHeight = 0;
+    function findDimensions() {
+      if (window.innerWidth)
+        winWidth = window.innerWidth;
+      else if ((document.body) && (document.body.clientWidth))
+        winWidth = document.body.clientWidth;
+      if (window.innerHeight)
+        winHeight = window.innerHeight;
+      else if ((document.body) && (document.body.clientHeight))
+        winHeight = document.body.clientHeight;
+      if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth) {
+        winHeight = document.documentElement.clientHeight;
+        winWidth = document.documentElement.clientWidth;
       }
-      findDimensions();
-      window.onresize = findDimensions;
-    </script>
+      var mychar = document.getElementById("sj");
+      mychar.style.width = winWidth + "px";
 
-    <div class="flex flex1 neiRong" style="overflow: auto">
-      <div style="flex: 3" class="flex column mg8">
-        <div class="ceBian flex shuJuQu ">
-          <div class=" baiSe yinYing flex1 mgr8 cs column" style="padding-top: 3%;overflow:hidden;">
-            <nobr>
-              <img class="img" src="https://p1.ssl.qhimgs1.com/sdr/400__/t01fd510607718120bb.jpg" alt="图片一"><!--
-              --><img class="img" src="https://p1.ssl.qhimgs1.com/sdr/400__/t01f48da0b7b8bfa1ab.gif" alt="图片二"><!--
-                --><img class="img" src="https://p2.ssl.qhimgs1.com/sdr/400__/t0139116345d154859c.jpg" alt="图片三"><!--
-                --><img class="img"
-                src="https://static.50yc.com/info/2015/11/873a0f2c-0371-467b-a981-95f52a8abc8f_org.jpg" alt="图片四">
-            </nobr>
-            <hr>
-            <hr style="border: 0px;border-bottom: 2px solid blue;">
-            <hr>
-          </div>
-        </div>
-        <div class="flex column">
-          <div class="shuJu lieBiaoXiang mgt8 baiSe yinYing ziti suoJin wenZhiYiChu">
-            <p> 周亚，重庆人，毕业于西南大学机电一体化专业，自动化技术员职称，2017年2月进入重庆医药和平物流工作，主要从事自动化设备运维、设备层通讯，数据维护，控制优化。</p>
-            <p style="color: deeppink;"> 三菱、欧姆龙、西门子PLC编程与调试，unix工控机优化、汇川伺服，自动化组态，视觉系统优化、总线通讯、各种变频器运用。</p>
-          </div>
-          <div class="shuJu lieBiaoXiang mgt8 baiSe yinYing ziti suoJin wenZhiYiChu">
-            <p> 2003年至2017年，上海展升自动化工作，从电气负责人做起，历经设备制造、项目施工、程序编写、调试、项目SV、运维，积累了丰富的行业全系列工作经验。
-              与日本(大福)、韩国(大福)、德国(德马泰克)、澳大利亚(德马泰克)、奥地利(德马泰克)等国工程师在中国大陆地区一同参与近百项中大型工程项目，在工作中获得一直高度肯定。
-              从制造到安装，从项目负责到编程调试，历经设备制造到客户使用，及售后的全套流程。</p>
-          </div>
-          <div class="shuJu lieBiaoXiang mgt8 baiSe yinYing ziti suoJin wenZhiYiChu" ;"="">
-            <p>上海YKK、上海三洋、上海上标、上海会田、上海和黄、上海嘉麟杰、上海大众、上海大创、
-              上海日东、上海昭和、上海来伊份、上海标件、上海森松、上海理研、中山富拉斯特、中工集团、
-              仪征大众、内蒙伊利、勃林格殷格翰、北京嘉事堂、南昌卷烟、南昌海立、南通会田、南通森菘、
-              厦门利胜、厦门卷烟、厦门友达、台升家具、合肥安泰、合肥尼普洛、嘉善台升、天津中粮、天津京瓷、天津出光</p>
-          </div>
-          <div class="shuJu lieBiaoXiang mgt8 baiSe yinYing ziti suoJin wenZhiYiChu">
-            <p>天津天狮、奇瑞路虎、宁波大众、安泰物流、广东合生元、广州TS新项目、广州宏仁、广州松下、
-              广州洁柔、广州艾帕克、延锋江森、张家港扬子、徐州烟草、成都伊利、成都洁柔、无锡东元、
-              无锡工装、日立化成、昆山VF、昆山台光、昆山神讯、普利斯通、杭州可乐、杭州贝因美、
-              梅州伊利、武汉提爱思、沈阳通用、深圳YKK、深圳卷烟、深圳日东、湖南恒裕、湛江晨鸣、
-              湛江美伦、芜湖卷烟</p>
-          </div>
-          <div class="shuJu lieBiaoXiang mgt8 baiSe yinYing ziti suoJin wenZhiYiChu">
-            <p>苏州NGK、苏州友达、苏州太阳、苏州快捷、苏州日东、西安华润、郑州格力、重庆B8、
-              重庆医药、重庆机电、重庆永辉、重庆药友、重庆贝乐、长沙大众、长泰、阿斯利康、
-              高明海天..........等百余项中大型项目。</p>
-          </div>
-          <div class="shuJu lieBiaoXiang mgt8 baiSe yinYing">
-            <dt style="color: brown;">友情链接</dt>
-            <dd><a target="_blank" rel="nofollow" href="https://www.daifuku.com/cn/"> 大福(中国)物流设备有限公司 </a></dd>
-            <dd><a target="_blank" rel="nofollow" href="https://www.dematic.cn/"> 德马泰克Dematic </a></dd>
-            <dd><a target="_blank" rel="nofollow" href="https://www.hamco.net.cn/"> 苏州鸿安机械股份有限公司 </a></dd>
-            <dd><a target="_blank" rel="nofollow" href="https://www.cqphar.com/"> 重庆医药（集团）股份有限公司 </a></dd>
-          </div>
-          <div class="shuJu lieBiaoXiang mgt8 baiSe yinYing">
-            <p style="text-align: center;padding: 10px; ">我的版权声明</p>
-            <p style="text-align: center;padding: 10px; "><a rel="nofollow"
-                href="https://wuduqisanshao.github.io/two/">我的主页</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div style="flex: 1" class="ceBian youQu flex column mgr8 mgt8 ">
-        <div style="height: 700px" class="baiSe yinYing">待定</div>
-        <div style="height: 700px" class="mgt8 baiSe yinYing">待定</div>
-      </div>
-    </div>
+      if (winWidth < 600) {
+        mychar.style.height = "auto"
+        mychar.style.fontSize = 14 + "px"
+        mychar.style.lineHeight = 20 + "px"
+        mychar.style.paddingTop = 15 + "px"
+        mychar.style.textAlign = "center"
+      } else {
+        // mychar.style.height = "auto"
+        // mychar.style.fontSize = 25 + "px"
+        // mychar.style.lineHeight = 40 + "px"
+        // mychar.style.padding = 25 + "px"
+        // mychar.style.textAlign = "center"
+        mychar.style.width = "1000px"
+
+      }
+    }
+    findDimensions();
+    window.onresize = findDimensions;
+  </script>
+
+
+
+
+  <div class="linkQu yinYing">
+    <dt style="color: brown;">友情链接</dt>
+    <dd><a target="_blank" rel="nofollow" href="https://www.daifuku.com/cn/"> 大福(中国)物流设备有限公司 </a></dd>
+    <dd><a target="_blank" rel="nofollow" href="https://www.dematic.cn/"> 德马泰克Dematic </a></dd>
+    <dd><a target="_blank" rel="nofollow" href="https://www.hamco.net.cn/"> 苏州鸿安机械股份有限公司 </a></dd>
+    <dd><a target="_blank" rel="nofollow" href="https://www.cqphar.com/"> 重庆医药（集团）股份有限公司 </a></dd>
   </div>
+  <div class="userQu yinYing">
+    <p>我的版权声明</p>
+    <p><a rel="nofollow" href="https://wuduqisanshao.github.io/two/">我的主页</a>
+    </p>
+  </div>
+
 </body>
 
 </html>
