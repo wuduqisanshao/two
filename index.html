@@ -13,11 +13,12 @@
       box-sizing: border-box;
     }
 
-
-
-    .headQu {
+    .wraper {
       margin: 0 auto;
       width: 1000px;
+    }
+
+    .headQu {
       height: 100px;
       color: brown;
       font-style: italic;
@@ -37,10 +38,8 @@
     }
 
     .bannerQu {
-      margin: 0 auto;
       justify-content: center;
       align-content: center;
-      width: 1000px;
       height: 200px;
       padding-top: 10px;
     }
@@ -50,11 +49,9 @@
     }
 
     .textQu {
-      margin: 0 auto;
-      width: 1000px;
-      height: 800px;
-      text-indent: 2em;
-      padding: 2em;
+      height: auto;
+      text-indent: 20px;
+      padding: 20px;
       /* font-style: italic; */
       overflow: hidden;
       text-overflow: ellipsis;
@@ -64,13 +61,17 @@
     }
 
     .linkQu {
-      margin: 0 auto;
-      width: 1000px;
-      height: 200px;
+      height: auto;
       line-height: 30px;
       font-size: 20px;
-      padding-top: 1em;
-      padding-left: 2em;
+      padding-top: 10px;
+      padding-left: 20px;
+      padding-bottom: 10px;
+    }
+
+    .linkQu dd {
+      text-indent: 30px;
+      /* padding: 30px; */
     }
 
     a {
@@ -82,8 +83,6 @@
     }
 
     .userQu {
-      margin: 0 auto;
-      width: 1000px;
       height: 100px;
     }
 
@@ -123,6 +122,7 @@
         font-family: kaiti;
         font-weight: bold;
         font-size: 10px;
+        padding: 20px;
 
       }
 
@@ -145,14 +145,13 @@
       .textQu {
         width: auto;
         height: auto;
-        text-indent: 2em;
-        padding: 2em;
+        text-indent: 10px;
+        padding: 10px;
         /* font-style: italic; */
         overflow: hidden;
         text-overflow: ellipsis;
         line-height: 20px;
         font-family: kaiti;
-        /* font-weight: bold; */
         font-size: 10px;
         text-align: left；
       }
@@ -162,8 +161,14 @@
         height: auto;
         line-height: 20px;
         font-size: 10px;
-        padding-top: 1em;
-        padding-left: 2em;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+      }
+
+      .linkQu dd {
+        text-indent: 30px;
+        /* padding: 30px; */
       }
 
       .userQu {
@@ -185,21 +190,22 @@
         background: -moz-linear-gradient(right, #e7daca, #ffc987);
         background: linear-gradient(to right, #e7daca, #ffc987);
       }
+    }
   </style>
 
   <audio id="musicid" src="./793503900.mp3" preload="preload" autoplay="autoplay" loop="loop">您的浏览器不支持 audio标签。</audio>
 
   <script type="text/javascript">
-    // 音乐播放
+    // 音乐播放
     function autoPlayMusic() {
-      // 自动播放音乐效果，解决浏览器或者APP自动播放问题
+      // 自动播放音乐效果，解决浏览器或者APP自动播放问题
       function musicInBrowserHandler() {
         musicPlay(true);
         document.body.removeEventListener('touchstart', musicInBrowserHandler);
       }
       document.body.addEventListener('touchstart', musicInBrowserHandler);
 
-      // 自动播放音乐效果，解决微信自动播放问题
+      // 自动播放音乐效果，解决微信自动播放问题
       function musicInWeixinHandler() {
         musicPlay(true);
         document.addEventListener("WeixinJSBridgeReady", function () {
@@ -223,11 +229,11 @@
 </head>
 
 <body>
-  <div class="headQu yinYing">
+  <div class="wraper headQu yinYing">
     <strong> 传承工匠精神，21年专注自动化， 近百余项中大型自动化仓储项目参与者。</strong>
     <hr>
   </div>
-  <div class="bannerQu yinYing">
+  <div class="wraper bannerQu yinYing">
     <hr style="border: 0px;border-bottom: 2px solid rgb(255, 0, 204);">
     <nobr>
       <img class="img" src="https://p1.ssl.qhimgs1.com/sdr/400__/t01fd510607718120bb.jpg" alt="图片一"><!--
@@ -241,78 +247,39 @@
     <hr>
   </div>
   </div>
-  <div class="textQu yinYing" id="sj">
-    <p> 周亚，重庆人，毕业于西南大学机电一体化专业，自动化技术员职称，2017年2月进入重庆医药和平物流工作，主要从事自动化设备运维、设备层通讯，数据维护，控制优化。</p>
-    <hr>
+  <div class="wraper textQu yinYing">
+    周亚，重庆人，毕业于西南大学机电一体化专业，自动化技术员职称，2017年2月进入重庆医药和平物流工作，主要从事自动化设备运维、设备层通讯，数据维护，控制优化。
+  </div>
+  <div class="wraper textQu yinYing">
     <p style="color: deeppink;"> 三菱、欧姆龙、西门子PLC编程与调试，unix工控机优化、汇川伺服，自动化组态，视觉系统优化、总线通讯、各种变频器运用。</p>
-    <hr>
+  </div>
+  <div class="wraper textQu yinYing">
     <p> 2003年至2017年，上海展升自动化工作，从电气负责人做起，历经设备制造、项目施工、程序编写、调试、项目SV、运维，积累了丰富的行业全系列工作经验。
       与日本(大福)、韩国(大福)、德国(德马泰克)、澳大利亚(德马泰克)、奥地利(德马泰克)等国工程师在中国大陆地区一同参与近百项中大型工程项目，在工作中获得一直高度肯定。
       从制造到安装，从项目负责到编程调试，历经设备制造到客户使用，及售后的全套流程。</p>
-    <hr>
-    <p>上海YKK、上海三洋、上海上标、上海会田、上海和黄、上海嘉麟杰、上海大众、上海大创、
-      上海日东、上海昭和、上海来伊份、上海标件、上海森松、上海理研、中山富拉斯特、中工集团、
-      仪征大众、内蒙伊利、勃林格殷格翰、北京嘉事堂、南昌卷烟、南昌海立、南通会田、南通森菘、
-      厦门利胜、厦门卷烟、厦门友达、台升家具、合肥安泰、合肥尼普洛、嘉善台升、天津中粮、天津京瓷、天津出光、
-      天津天狮、奇瑞路虎、宁波大众、安泰物流、广东合生元、广州TS新项目、广州宏仁、广州松下、
-      广州洁柔、广州艾帕克、延锋江森、张家港扬子、徐州烟草、成都伊利、成都洁柔、无锡东元、
-      无锡工装、日立化成、昆山VF、昆山台光、昆山神讯、普利斯通、杭州可乐、杭州贝因美、
-      梅州伊利、武汉提爱思、沈阳通用、深圳YKK、深圳卷烟、深圳日东、湖南恒裕、湛江晨鸣、
-      湛江美伦、芜湖卷烟、苏州NGK、苏州友达、苏州太阳、苏州快捷、苏州日东、西安华润、郑州格力、重庆B8、
-      重庆医药、重庆机电、重庆永辉、重庆药友、重庆贝乐、长沙大众、长泰、阿斯利康、
-      高明海天..........等百余项中大型项目。</p>
+  </div>
+  <div class="wraper textQu yinYing">
+    上海YKK、上海三洋、上海上标、上海会田、上海和黄、上海嘉麟杰、上海大众、上海大创、
+    上海日东、上海昭和、上海来伊份、上海标件、上海森松、上海理研、中山富拉斯特、中工集团、
+    仪征大众、内蒙伊利、勃林格殷格翰、北京嘉事堂、南昌卷烟、南昌海立、南通会田、南通森菘、
+    厦门利胜、厦门卷烟、厦门友达、台升家具、合肥安泰、合肥尼普洛、嘉善台升、天津中粮、天津京瓷、天津出光、
+    天津天狮、奇瑞路虎、宁波大众、安泰物流、广东合生元、广州TS新项目、广州宏仁、广州松下、
+    广州洁柔、广州艾帕克、延锋江森、张家港扬子、徐州烟草、成都伊利、成都洁柔、无锡东元、
+    无锡工装、日立化成、昆山VF、昆山台光、昆山神讯、普利斯通、杭州可乐、杭州贝因美、
+    梅州伊利、武汉提爱思、沈阳通用、深圳YKK、深圳卷烟、深圳日东、湖南恒裕、湛江晨鸣、
+    湛江美伦、芜湖卷烟、苏州NGK、苏州友达、苏州太阳、苏州快捷、苏州日东、西安华润、郑州格力、重庆B8、
+    重庆医药、重庆机电、重庆永辉、重庆药友、重庆贝乐、长沙大众、长泰、阿斯利康、
+    高明海天..........等百余项中大型项目。
   </div>
 
-  <script type="text/javascript">
-    var winWidth = 0;
-    var winHeight = 0;
-    function findDimensions() {
-      if (window.innerWidth)
-        winWidth = window.innerWidth;
-      else if ((document.body) && (document.body.clientWidth))
-        winWidth = document.body.clientWidth;
-      if (window.innerHeight)
-        winHeight = window.innerHeight;
-      else if ((document.body) && (document.body.clientHeight))
-        winHeight = document.body.clientHeight;
-      if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth) {
-        winHeight = document.documentElement.clientHeight;
-        winWidth = document.documentElement.clientWidth;
-      }
-      var mychar = document.getElementById("sj");
-      mychar.style.width = winWidth + "px";
-
-      if (winWidth < 600) {
-        mychar.style.height = "auto"
-        mychar.style.fontSize = 14 + "px"
-        mychar.style.lineHeight = 20 + "px"
-        mychar.style.paddingTop = 15 + "px"
-        mychar.style.textAlign = "center"
-      } else {
-        // mychar.style.height = "auto"
-        // mychar.style.fontSize = 25 + "px"
-        // mychar.style.lineHeight = 40 + "px"
-        // mychar.style.padding = 25 + "px"
-        // mychar.style.textAlign = "center"
-        mychar.style.width = "1000px"
-
-      }
-    }
-    findDimensions();
-    window.onresize = findDimensions;
-  </script>
-
-
-
-
-  <div class="linkQu yinYing">
+  <div class="wraper linkQu yinYing">
     <dt style="color: brown;">友情链接</dt>
     <dd><a target="_blank" rel="nofollow" href="https://www.daifuku.com/cn/"> 大福(中国)物流设备有限公司 </a></dd>
     <dd><a target="_blank" rel="nofollow" href="https://www.dematic.cn/"> 德马泰克Dematic </a></dd>
     <dd><a target="_blank" rel="nofollow" href="https://www.hamco.net.cn/"> 苏州鸿安机械股份有限公司 </a></dd>
     <dd><a target="_blank" rel="nofollow" href="https://www.cqphar.com/"> 重庆医药（集团）股份有限公司 </a></dd>
   </div>
-  <div class="userQu yinYing">
+  <div class="wraper userQu yinYing">
     <p>我的版权声明</p>
     <p><a rel="nofollow" href="https://wuduqisanshao.github.io/two/">我的主页</a>
     </p>
