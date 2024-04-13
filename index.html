@@ -18,11 +18,6 @@
       width: 1000px;
     }
 
-    .ZanWei {
-      height: 110px;
-    }
-
-
     .headQu {
       height: auto;
       color: brown;
@@ -112,10 +107,6 @@
 
 
     @media (max-width: 600px) {
-      .ZanWei {
-        height: 40px;
-      }
-
       .bannerQu {
         display: none;
       }
@@ -216,7 +207,7 @@
         musicPlay(true);
         document.addEventListener("WeixinJSBridgeReady", function () {
           musicPlay(true);
-        },false};
+        }, false);
         document.removeEventListener('DOMContentLoaded', musicInWeixinHandler);
       }
       document.addEventListener('DOMContentLoaded', musicInWeixinHandler);
@@ -241,7 +232,6 @@
     <strong> 传承工匠精神，21年专注自动化， 中国境内近百余项中大型自动化仓储项目参与者。</strong>
     <hr>
   </div>
-  <div class="wraper ZanWei"> </div>
   <div class="wraper bannerQu yinYing">
     <hr style="border: 0px;border-bottom: 2px solid rgb(255, 0, 204);">
     <nobr>
