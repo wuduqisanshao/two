@@ -24,9 +24,6 @@
 
 
     .headQu {
-      position: fixed;
-      left: 0;
-      right: 0;
       height: auto;
       color: brown;
       font-style: italic;
@@ -219,7 +216,7 @@
         musicPlay(true);
         document.addEventListener("WeixinJSBridgeReady", function () {
           musicPlay(true);
-        };
+        },false};
         document.removeEventListener('DOMContentLoaded', musicInWeixinHandler);
       }
       document.addEventListener('DOMContentLoaded', musicInWeixinHandler);
